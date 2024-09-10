@@ -10,7 +10,8 @@ const Benefits = (props) => {
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
-          }`}>
+          }`}
+        >
           <div>
             <Image
               src={data.image}
@@ -27,10 +28,11 @@ const Benefits = (props) => {
         <div
           className={`flex flex-wrap items-center w-full lg:w-1/2 ${
             data.imgPos === "right" ? "lg:justify-end" : ""
-          }`}>
+          }`}
+        >
           <div>
             <div className="flex flex-col w-full mt-4">
-              <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+              <h3 className="max-w-2xl mt-3 text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white font-elegant">
                 {data.title}
               </h3>
 
@@ -57,9 +59,9 @@ function Benefit(props) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
+        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-charcoalGrey rounded-md w-11 h-11 ">
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-indigo-50",
+            className: "w-7 h-7 text-roseQuartz",
           })}
         </div>
         <div>
